@@ -47,7 +47,6 @@
     <Compile Include="Iron.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resurs.cs" />
     <Compile Include="Stone.cs" />
     <Compile Include="Tree.cs" />
   </ItemGroup>

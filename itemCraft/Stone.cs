@@ -19,5 +19,21 @@ namespace itemCraft
         {
             return _symbol;
         }
+        public static bool operator !=(String obj, Stone obj2)
+        {
+            if (obj != obj2.GetStoneSymbol())
+            {
+                return true;
+            }
+            return false;
+        }
+        public static bool operator ==(String obj, Stone obj2)
+        {
+            if (obj == obj2.GetStoneSymbol())
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

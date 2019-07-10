@@ -19,5 +19,22 @@ namespace itemCraft
         {
             return _symbol;
         }
+        public static bool operator !=(String obj, Tree obj2)
+        {
+            if (obj != obj2.GetTreeSymbol())
+            {
+                return true;
+            }
+            return false;
+        }
+        public static bool operator ==(String obj, Tree obj2)
+        {
+            if (obj == obj2.GetTreeSymbol())
+            {
+                return true;
+            }
+            return false;
+        }
+
     }
 }

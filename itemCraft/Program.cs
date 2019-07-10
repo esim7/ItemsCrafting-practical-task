@@ -149,18 +149,19 @@ namespace itemCraft
                                 Stone st = new Stone();
                                 Gold gl = new Gold();
                                 Iron ir = new Iron();
-                                if (craftItems[0] == st.GetStoneSymbol() && craftItems[1] == st.GetStoneSymbol() && craftItems[2] == st.GetStoneSymbol()
-                                    && craftItems[4] == tr.GetTreeSymbol() && craftItems[7] == tr.GetTreeSymbol())
+                                //тут используется перегруженный оператор ==
+                                if (craftItems[0] == st && craftItems[1] == st && craftItems[2] == st
+                                    && craftItems[4] == tr && craftItems[7] == tr)
                                 {
                                     Console.WriteLine("Поздравляем Вы скрафтили каменную кирку");
                                 }
-                                else if(craftItems[0] == gl.GetGoldSymbol() && craftItems[1] == gl.GetGoldSymbol() && craftItems[2] == gl.GetGoldSymbol()
-                                    && craftItems[4] == tr.GetTreeSymbol() && craftItems[7] == tr.GetTreeSymbol())
+                                else if(craftItems[0] == gl && craftItems[1] == gl && craftItems[2] == gl
+                                    && craftItems[4] == tr && craftItems[7] == tr)
                                 {
                                     Console.WriteLine("Поздравляем Вы скрафтили золотую кирку");
                                 }
-                                else if (craftItems[0] == ir.GetIronSymbol() && craftItems[1] == ir.GetIronSymbol() && craftItems[2] == ir.GetIronSymbol()
-                                    && craftItems[4] == tr.GetTreeSymbol() && craftItems[7] == tr.GetTreeSymbol())
+                                else if (craftItems[0] == ir && craftItems[1] == ir && craftItems[2] == ir
+                                    && craftItems[4] == tr && craftItems[7] == tr)
                                 {
                                     Console.WriteLine("Поздравляем Вы скрафтили железную кирку");
                                 }
